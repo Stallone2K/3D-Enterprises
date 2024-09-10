@@ -1,22 +1,8 @@
 import React, { useLayoutEffect, useRef } from "react";
 import { useGLTF, useScroll } from "@react-three/drei";
-// import { useFrame } from "@react-three/fiber";
-// import gsap from "gsap";
 
 export default function Chair(props) {
   const { nodes, materials } = useGLTF("/Chair.glb");
-  // const ref = useRef();
-  // const tl = useRef();
-
-  // useLayoutEffect(() => {
-  //   tl.current = gsap.timeline();
-
-  //   //tl Animation:
-  //   tl.current.to(ref.current.position, {
-  //     duration: 2,
-  //     y: -FLOOR_HEIGHT * (NB_FLOORS - 1),
-  //   });
-  // }, []);
 
   return (
     <group {...props} dispose={null}>
